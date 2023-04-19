@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assessment.css">
+    <link rel="stylesheet" href="assessment.js">
+</head>
+
+<body>
+    <h1>Student Registaration Form</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-10">
+                <label for="fname" required>First Name:</label>
+            </div>
+            <div class="col-90">
+                <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="lname">Last Name:</label>
+            </div>
+            <div class="col-90">
+                <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="email">Email:</label>
+            </div>
+            <div class="col-90">
+                <input type="email" id="email" name="email" placeholder="example@gmail.com">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="password">Password:</label>
+            </div>
+            <div class="col-90">
+                <input type="password" id="password" name="password" minlength="8">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="mobile">Mobile:</label>
+            </div>
+            <div class="col-90">
+                <input type="tel" id="mobile" name="mobile" placeholder="only 10 digits are allowed">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="gender" required>Gender:</label>
+            </div>
+            <div class="col-90">
+
+                <input type="radio" id="male" name="gender" value="male" placeholder="">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="dob">Date Of Birth:</label>
+            </div>
+            <div class="col-90">
+                <input type="Date" id="dob" name="dob">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="address">Address:</label>
+            </div>
+            <div class="col-90">
+                <textarea name="address" id="address" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="city">City:</label>
+            </div>
+            <div class="col-90">
+                <input type="text" id="city" name="city">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="pincode">Area PIN:</label>
+            </div>
+            <div class="col-90">
+                <input type="number" id="pin" name="pin">
+                <label for="pin">Number</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="state">State:</label>
+            </div>
+            <div class="col-90">
+                <input type="text" id="state" name="state">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="qualification" required>Qualification:</label>
+            </div>
+            <div class="col-90">
+                <select name="qualification" id="qualification">
+                    <option value=" ">Select Qualification:</option>
+                    <option value="Graduation">Graduation</option>
+                    <option value="BTech.">BTech.</option>
+                    <option value="MTech.">MTech.</option>
+
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="specialization">Specialization:</label>
+            </div>
+            <div class="col-90">
+                <input type="checkbox" class="specialization" id="Fed" name="specialization[]"
+                    value="Front end developer" placeholder="front end">Front end developer<br />
+                <input type="checkbox" class="specialization" id="it" name="specialization[]"
+                    value="Information Technology" placeholder="IT">Information Technology<br />
+                <input type="checkbox" class="specialization" id="ds" name="specialization[]" value="Date Science"
+                    placeholder="DS">Data
+                Science<br />
+                <input type="checkbox" class="specialization" id="networking" name="specialization[]" value="Networking"
+                    placeholder="Networking">Networking<br />
+            </div>
+        </div>
+
+        <div class="row">
+            <input type="submit" value="Submit" onclick="SaveStudentDetails()">
+
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
